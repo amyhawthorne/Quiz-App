@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Office Trivia Quiz: A 30-Question Quiz About Michael Scott, Jim Halpern, Pam Beasley, Dwight Schrute, and the Rest of the The Dunder Mifflin Staff
+        </title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header> 
+                <a href="index.html">
+                <img class="Logo" src="Dunder_Mifflin,_Inc.svg" alt="Dunder Mifflin Logo" />
+                </a>  
+                <h1 class="title">Do You Know Dunder Mifflin?</h1>
+        </header>
+
+        <main> 
+
+        <div class="invite-to-take-quiz">
+            <h2 class="subtitle">A 30-Question Quiz for the Ultimate Fan of The Office TV Series</h2>
+                <p class ="intro">So you think you know the office the way Michael Scott knows management? 
+                <br>The way Kevin Malone knows chili? 
+                <br>The way Angela Martin knows cats? 
+                <br>Now is your chance to prove it with the ultimate quiz all about the hilarious staff of Dunder Mifflin.
+                </p>
+                
+                <button type="get-started">Get Started</button>
+        </div>
+
+        
+        <form class="take-the-quiz-form" action="/some-server-endpoint" method ="post">
+
+            <h3 class="question-counter">Question 1 of 30</h3>
+            <fieldset>
+              <legend class="question">What did Angela do with the money she got for selling her engagement ring from Andy?</legend>
+                <input type="checkbox" name="Option" id="AnswerA" value="0" unchecked>
+                <label for="AnswerA">Bought a new cat named Princess Lady</label>
+                <br>
+                <input type="checkbox" name="Option" id="AnswerB" value="0" unchecked>
+                <label for="AnswerC">Built a house for her cats</label>
+                <br>
+                <input type="checkbox" name="Option" id="AnswerC" value="0" unchecked>
+                <label for="AnswerC">Purchased a cat-themed cashmere wardrobe</label>
+                <br>
+                <input type="checkbox" name="Option" id="AnswerD" value="0" unchecked>
+                <label for="AnswerD">Threw an elaborate birthday party for her cat, Sprinkles</label>
+                <br>
+                <button type="submit">Submit</button>
+        
+              </legend>
+          </fieldset>  
+        </form>  
+
+        <br><br>
+
+        <form class="take-the-quiz-form-incomplete" action="/some-server-endpoint" method ="post">
+
+            <h3 class="question-counter">Question 1 of 30</h3>
+            <fieldset>
+              <legend class="question">What did Angela do with the money she got for selling her engagement ring from Andy?</legend>
+                <input type="checkbox" name="Option" id="AnswerA" value="0" unchecked>
+                <label for="AnswerA">Bought a new cat named Princess Lady</label>
+                <br>
+                <input type="checkbox" name="Option" id="AnswerB" value="0" unchecked>
+                <label for="AnswerC">Built a house for her cats</label>
+                <br>
+                <input type="checkbox" name="Option" id="AnswerC" value="0" unchecked>
+                <label for="AnswerC">Purchased a cat-themed cashmere wardrobe</label>
+                <br>
+                <input type="checkbox" name="Option" id="AnswerD" value="0" unchecked>
+                <label for="AnswerD">Threw an elaborate birthday party for her cat, Sprinkles</label>
+                <br>
+                <button type="submit">Submit</button>
+                <p class="error-message">(You have to select an answer before going to the next question.)</p>  
+              </legend>
+          </fieldset>
+         
+        </form> 
+
+
+
+
+        <br><br>
+
+        <div class="single-answer-result-correct">
+
+            <h3 class="question-counter">Question 1 of 30</h3>
+
+            <iframe src="https://giphy.com/embed/3oz8xVk9HbWUMn5fag" width="480" height="233" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nbc-the-office-3oz8xVk9HbWUMn5fag"></a></p>
+
+
+            <p class="answer-is-correct">'Bought a new cat named Princess Lady' is correct!</p>
+            <p class="attaboy">Way to go!</p>
+
+            <button type="next">Next Question</button>
+
+        </div> 
+
+        <div class="single-answer-result-incorrect">
+
+            <h3 class="question-counter">Question 1 of 30</h3>
+
+            <iframe src="https://giphy.com/embed/rj9bBTO7AQNiw" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/lot-town-rj9bBTO7AQNiw"></a></p>
+
+            <p class="answer-is-incorrect">'Built a house for her cats' is not correct.  The correct answer is 'Bought a new cat named Princess Lady.'</p>
+            <p class="better-luck-next-time">Better luck next time.</p>
+
+            <button type="next">Next Question</button>
+
+
+        </div>
+
+        <div class="quiz-results-good-score">
+            <p class="this-many-correct">You got <b>29</b> out of <b>30</b> answers correct!</p>
+            <p class="results-ranking-message">David Wallace is calling! You're about to receive a promotion from Corporate.</p> 
+            <button type="retake">Retake the Quiz</button>
+            <br>
+            <br>
+            <button type="share">Share with Friends</button>
+            
+        </div>
+
+        <div class="quiz-results-ok-score">
+            <p class="this-many-correct">You got <b>19</b> out of <b>30</b> answers correct.</p>
+            <p class="results-ranking-message">Not bad! You could soon be named assistant to the regional manager.</p> 
+            <button type="retake">Retake the Quiz</button>
+            <br>
+            <br>
+            <button type="share">Share with Friends</button>
+            
+            
+        </div>
+
+        <div class="quiz-results-bad-score">
+            <p class="this-many-correct">You got <b>8</b> out of <b>30</b> answers correct.</p>
+            <p class="results-ranking-message">Too much time in the breakroom! Back to work.</p> 
+            <button type="retake">Retake the Quiz</button>
+            <br>
+            <br>
+            <button type="share">Share with Friends</button>
+
+
+
+        </div>
+
+    
+       
+          
+
+      </main>
+    </body>
+</html>
